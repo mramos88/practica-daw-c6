@@ -13,7 +13,7 @@ app.use(express.static('/home/node/app/static/'));
 
 //=======[ Main module code ]==================================================
 
-app.get('/devices/', function(req, res, next) {
+app.get('/devices', function(req, res, next) {
     devices = [
         { 
             'id': 1, 
