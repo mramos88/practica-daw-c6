@@ -33,6 +33,9 @@ app.get('/devices', function(req, res, next) {
     res.send(JSON.stringify(devices)).status(200);
 });
 
+app.post('/devices', function(req, res, next) {
+    res.send({'llego':req});
+});
 app.listen(PORT, function(req, res) {
     console.log("NodeJS API running correctly");
 });
